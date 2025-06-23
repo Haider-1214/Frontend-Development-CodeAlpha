@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haider Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Welcome to Haider Gallery</h1>
+    <!-- Added Header -->
+    <div class="gallery">
+        <div class="gallery-item-container">
+            <img src="/Screenshot (109).png" alt="Image 1" class="gallery-item" onclick="openLightbox(); currentSlide(1)">
+            <p class="image-caption">Cold Drinks Superstore </p>
+            <!-- Caption for Image 1 -->
+        </div>
+        <div class="gallery-item-container">
+            <img src="/Screenshot (27).png" alt="Image 2" class="gallery-item" onclick="openLightbox(); currentSlide(2)">
+            <p class="image-caption">Sales Analysis Dashboard</p>
+            <!-- Caption for Image 2 -->
+        </div>
+        <div class="gallery-item-container">
+            <img src="/Screenshot (50).png" alt="Image 3" class="gallery-item" onclick="openLightbox(); currentSlide(3)">
+            <p class="image-caption">Prime Vidoes Analysis Dashboard</p>
+            <!-- Caption for Image 3 -->
+        </div>
+        <div class="gallery-item-container">
+            <img src="/Screenshot (52).png" alt="Image 3" class="gallery-item" onclick="openLightbox(); currentSlide(3)">
+            <p class="image-caption">Superstore Analysis Report</p>
+            <!-- Caption for Image 3 -->
+        </div>
+        <div class="gallery-item-container">
+            <img src="/Screenshot (74).png" alt="Image 3" class="gallery-item" onclick="openLightbox(); currentSlide(3)">
+            <p class="image-caption">Thal Superstore</p>
+            <!-- Caption for Image 3 -->
+        </div>
+        <div class="gallery-item-container">
+            <img src="/Screenshot (75).png" alt="Image 3" class="gallery-item" onclick="openLightbox(); currentSlide(3)">
+            <p class="image-caption">Thal Superstore Sales Analysis Dashboard</p>
+            <!-- Caption for Image 3 -->
+        </div>
+        <div class="gallery-item-container">
+            <img src="/Screenshot (76).png" alt="Image 3" class="gallery-item" onclick="openLightbox(); currentSlide(3)">
+            <p class="image-caption">NetFlix Analysis</p>
+            <!-- Caption for Image 3 -->
+        </div>
+        <div class="gallery-item-container">
+            <img src="/Screenshot (79).png" alt="Image 3" class="gallery-item" onclick="openLightbox(); currentSlide(3)">
+            <p class="image-caption">Malik Superstore Sales Analysis Dashboard</p>
+            <!-- Caption for Image 3 -->
+        </div>
+        <!-- Add more images as needed -->
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <div class="lightbox-slides">
+                <img class="lightbox-slide" src="images/image1.jpg" alt="Image 1">
+                <img class="lightbox-slide" src="images/image2.jpg" alt="Image 2">
+                <img class="lightbox-slide" src="images/image3.jpg" alt="Image 3">
+                <!-- Add more images as needed -->
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+    <footer>
+        <p>If you want to get similar work done, feel free to contact me!</p>
+        <p>WhatsApp: <a href="https://wa.me/+923207365251">+92207365251</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
